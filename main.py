@@ -41,7 +41,9 @@ if __name__=="__main__":
         idx_mask = np.asarray(np.where((bajo < termica) * (termica < alto))).T
         out = drawPoint(imgRGB, idx_mask)
         cv2.imshow("My app", out)
-        cv2.waitKey(1)
+        key = cv2.waitKey(1)
+        if key == ord('q')
+            break
 
 
 
